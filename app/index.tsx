@@ -20,7 +20,7 @@ export default function Index() {
     try {
       const response = await axios.get("https://digi-api.com/api/v1/digimon");
       setDigimons(response.data.content.slice(0, 10));
-      console.log(response.data.content[0]); // pra testar
+      console.log(response.data.content[0]); 
     } catch (err) {
       console.log("Erro ao buscar digimons:", err);
     }
